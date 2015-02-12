@@ -1,0 +1,292 @@
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400);
+
+/*reset section*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+padding:0;
+vertical-align:middle;
+}
+
+/*end of reset section*/
+
+
+body {
+    background-color: #F2F2F2;
+    font-family: 'calibri', sans-serif;
+    color:#4E4E4E;
+}
+
+
+
+
+
+#content_wrapper {
+    box-sizing:border-box;
+    width: 900px;
+    margin: 0 auto 20px;
+    border-radius:  0 0 15px 15px;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    background-color: white;
+    padding: 30px 30px 100px 30px;
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.9em;
+    color: #F95252;
+    padding: 10px 0;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: #F95252;
+    padding: 10px 0;
+
+}
+
+
+
+input[type="text"], input[type="password"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 15px ;
+    font-size: 1.1em;
+    color: #434343;
+    border: solid #EBEBE0 1px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    font-family: 'Calibri', sans-serif;
+    font-weight: 100;
+    opacity: 0.5;
+    transition: opacity linear 0.4s;
+    -webkit-transition: opacity linear 0.4s;
+    -moz-transition: opacity linear 0.4s;
+    -o-transition: opacity linear 0.4s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+        opacity: 1;
+    }
+
+
+
+input[type="button"] {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    display: block;
+    background-color: #33cc77;
+    color: white;
+    padding: 6px 0;
+    font-size: 1.2em;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+input[type="button"]:hover {
+    background-color: #2DB76B;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #9B9B9B;
+    border: none;
+}
+
+
+
+a:hover {
+    color: #646464;
+}
+
+textarea{
+     display: block;
+     box-sizing: border-box;
+    margin-top: 15px ;
+    font-size: 1.1em;
+    color: #434343;
+    border: solid #EBEBE0 1px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    font-family: 'Calibri', sans-serif;
+    font-weight: 100;
+    opacity: 0.5;
+    transition: opacity linear 0.4s;
+    -webkit-transition: opacity linear 0.4s;
+    -moz-transition: opacity linear 0.4s;
+    -o-transition: opacity linear 0.4s;
+    resize: none;
+}
+
+
+
+
+#error {
+text-align:center;
+}
+
+header h1{
+padding: 20px 0 20px 100px;
+background: url('../css/wallet-512.gif') 30px center no-repeat #F95252;
+background-size: 50px 50px;
+color: white;
+border-radius: 15px 15px 0  0;
+    -webkit-border-radius: 15px 15px 0  0;
+    -moz-border-radius: 15px 15px 0  0 ;
+}
+
+header {
+margin:20px auto 0 auto;
+width: 900px;
+
+}
+
+.add_btn{
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    width: 30px !important;
+    height: 30px !important;
+    padding-top: 0px !important;
+        font-size: 1.5em !important;
+
+}
+
+
+
+th {
+text-align: left;
+font-size: 1.1em;
+    color: #646464;
+}
+
+.clear {
+    clear:both;
+}
+
+.validation_error {
+display:inline-block;
+font-size: 0.7em;
+margin-left:3px;
+margin-top: 4px;
+}
+
+.left_menu {
+float:left;
+width: 150px;
+display:block;
+}
+
+.left_menu ul{
+    margin-top: 20px;
+
+}
+
+.left_menu li{
+padding-bottom: 10px;
+}
+
+.main_section {
+margin-left: 160px;
+}
+
+.debts_table {
+margin-top: 10px;
+
+}
+
+.debts_table  td, th{
+    padding: 10px;
+}
+
+.debts_table  td:nth-child(2){
+         text-align:center;
+
+}
+
+    .debts_table tr {
+        border-bottom: 1px solid #EBEBE0;
+
+    }
+
+.debts_table  tr:last-child{
+    border-bottom: none;
+
+}
+
+.debts_table caption {
+text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    color: #F95252;
+    padding-bottom: 10px;
+}
+
+.username {
+ display:block;
+ padding: 10px 0;
+}

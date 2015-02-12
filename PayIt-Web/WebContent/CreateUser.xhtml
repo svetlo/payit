@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://java.sun.com/jsf/passthrough"
+	>
+<ui:composition template="./template.xhtml">
+
+<h:head>
+<ui:define name="layout"></ui:define>
+</h:head>
+<body>
+
+ <ui:define name="content">
+	<h:form>
+		<div id="login_wrapper">
+			<span id="login-logo"></span>
+			<h1>Want to join?</h1>
+			<table id="create_user_form">
+				<tr>
+					<td><h:inputText value="#{createUser.login}"
+						p:placeholder="Login" /></td>
+				</tr>
+				<tr>
+					<td><h:inputText value="#{createUser.name}" p:placeholder="Name" />
+					</td>
+				</tr>
+				<tr>
+					<td><h:inputText value="#{createUser.surname}"
+							p:placeholder="Surname" /></td>
+				</tr>
+				<tr>
+					<td><h:inputText value="#{createUser.email}"
+							p:placeholder="Email" /></td>
+				</tr>
+				<tr>
+					<td><h:inputText value="#{createUser.password}"
+							p:placeholder="Password" /></td>
+				</tr>
+				<tr>
+					<td><h:inputText value="#{createUser.passwordRepeat}"
+							p:placeholder="Repeat password" /></td>
+				</tr>
+
+				<tr>
+					<td><h:button value="Create"
+							onclick="#{createUser.onClick_CreateUser()}" /></td>
+					<td></td>
+				</tr>
+
+			</table>
+		</div>
+
+
+	</h:form>
+	</ui:define>
+</body>
+</ui:composition>
+
+</html>
+
