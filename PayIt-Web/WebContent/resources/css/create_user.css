@@ -1,0 +1,9 @@
+﻿#create_user_form input[type="text"], input[type="password"] {
+margin: 0px 0 !important;
+
+}
+
+#create_user_form {
+        margin: 0 auto;
+        text-align: left;
+}
