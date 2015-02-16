@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+<h:outputStylesheet library="css" name="layout.css"></h:outputStylesheet>
+</h:head>
+<body>
+	<header>
+		<h1>PayIt</h1>
+	</header>
+	<div id="content_wrapper">
+		<div class="left_menu">
+			<h:form rendered="#{navigation.loggedIn}">
+				<ul>
+					<li><h:commandLink action="#{navigation.logOut()}"
+							value="Log out" /></li>
+				</ul>
+			</h:form>
+		</div>
+		<ui:insert name="content" />
+
+
+	</div>
+
+</body>
+</html>

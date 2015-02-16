@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+	>
+
+<h:head>
+<h:outputStylesheet library="css" name="layout.css"/>
+<h:outputStylesheet library="css" name="login.css"/>
+<h:outputStylesheet library="css" name="create_user.css"/>
+
+</h:head>
+<body>
+
+	<h:form>
+		<div id="login_wrapper">
+			<span id="login-logo"></span>
+			<h1>Want to join?</h1>
+			<table id="create_user_form">
+				<tr>
+					<td><h:inputText value="#{register.login}"
+						p:placeholder="Login" /></td>
+				</tr>
+				<tr>
+					<td><h:inputText value="#{register.name}" p:placeholder="Name" />
+					</td>
+				</tr>
+				<tr>
+					<td><h:inputText value="#{register.surname}"
+							p:placeholder="Surname" /></td>
+				</tr>
+				<tr>
+					<td><h:inputText value="#{register.email}"
+							p:placeholder="Email" /></td>
+				</tr>
+				<tr>
+					<td><h:inputSecret value="#{register.password}"
+							p:placeholder="Password" /></td>
+				</tr>
+				<tr>
+					<td><h:inputSecret value="#{register.passwordRepeat}"
+							p:placeholder="Repeat password" /></td>
+				</tr>
+
+				<tr>
+					<td><h:commandButton value="Create"
+							action="#{register.createUser()}" /></td>
+					<td></td>
+				</tr>
+
+			</table>
+		</div>
+
+
+	</h:form>
+</body>
+
+</html>
+

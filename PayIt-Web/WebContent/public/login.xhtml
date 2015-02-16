@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+	>
+
+<h:head>
+<h:outputStylesheet library="css" name="layout.css"/>
+<h:outputStylesheet library="css" name="login.css"/>
+
+</h:head>
+<body>
+			<div id="login_wrapper">
+				<span id="login-logo"></span>
+				<h1>Want to split?</h1>
+				<div id="login_form">
+					<h:form>
+						<h:inputText value="#{login.login}" p:placeholder="login"/>  
+						<h:inputSecret value="#{login.password}" p:placeholder="password"/>
+						 <h:commandButton action="#{login.login()}" value="log in" />
+					</h:form>
+					<a id="forgotten" href="#">Oppps...what's my password?</a>
+				</div>
+			</div>
+			<div id="error">
+				<h:outputLabel value="#{login.errorMessage}" />
+			</div>
+			<footer class="login">
+			<h:form>
+			<div class="login-help">
+				<a href="#">About</a>
+				<h:commandLink action="register">Register</h:commandLink>
+			</div>
+			</h:form>
+			</footer>
+
+</body>
+</html>
